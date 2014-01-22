@@ -5,5 +5,21 @@
     url('fonts/pfdintextcomppro-light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+@font-face {
+    font-family: 'pf_din_text_comp_proregular';
+    src: url('fonts/pfdintextcomppro-regular.eot');
+    src: url('fonts/pfdintextcomppro-regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/pfdintextcomppro-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'pf_din_text_comp_proXTh';
+    src: url('fonts/pfdintextcomppro-xthin.eot');
+    src: url('fonts/pfdintextcomppro-xthin.eot?#iefix') format('embedded-opentype'),
+    url('fonts/pfdintextcomppro-xthin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }

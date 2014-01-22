@@ -18,6 +18,7 @@ body {
 header {
   position: relative;
   height: 175px;
+  z-index: 10;
 }
 header .logo {
   position: absolute;
@@ -107,4 +108,56 @@ header .top_nav > ul > li > ul > li > a {
   color: #fff;
   text-decoration: none;
   padding: 0 3px;
+}
+.slider {
+  position: relative;
+  z-index: 0;
+}
+.slider .rsOverflow {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.slider .rsSlide img {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.slider .rsNav {
+  position: absolute;
+  z-index: 3;
+  top: 15px;
+  right: 43px;
+  font-size: 0;
+}
+.slider .rsNavItem {
+  display: inline-block;
+  margin-left: 10px;
+}
+.slider .rsNavItem span {
+  width: 11px;
+  height: 11px;
+  background: #fff;
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  border-radius: 11px;
+  display: block;
+}
+.slider .rsNavItem.rsNavSelected span {
+  background: #864580;
+}
+.slider .slide_caption {
+  color: #fff;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  width: 470px;
+  text-shadow: 1px 1px 2px black;
+}
+.slider .slide_caption .head {
+  font: 51px/45px 'pf_din_text_comp_proXTh';
+  margin-bottom: 15px;
+}
+.slider .slide_caption .text {
+  font: 14px 'pf_din_text_comp_proregular';
 }

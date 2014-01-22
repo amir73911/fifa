@@ -13,6 +13,7 @@ body {
 header {
   position: relative;
   height: 175px;
+  z-index: 10;
   .logo {
     position: absolute;
     left: 50%;
@@ -80,6 +81,57 @@ header {
           }
         }
       }
+    }
+  }
+}
+
+.slider {
+  position: relative;
+  z-index: 0;
+  .rsOverflow {
+    .rounded(20px);
+  }
+  .rsSlide {
+    img {
+      .rounded(20px);
+    }
+  }
+  .rsNav {
+    position: absolute;
+    z-index: 3;
+    top: 15px;
+    right: 43px;
+    font-size: 0;
+  }
+  .rsNavItem {
+    display: inline-block;
+    margin-left: 10px;
+    span {
+      width: 11px;
+      height: 11px;
+      background: #fff;
+      .rounded(11px);
+      display: block;
+    }
+    &.rsNavSelected {
+      span {
+        background: #864580;
+      }
+    }
+  }
+  .slide_caption {
+    color: #fff;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 470px;
+    text-shadow: 1px 1px 2px black; // добавил для лучшей читаемости текста на светлых фонах, недочет дизайнера
+    .head {
+      font: 51px/45px 'pf_din_text_comp_proXTh';
+      margin-bottom: 15px;
+    }
+    .text {
+      font: 14px 'pf_din_text_comp_proregular';
     }
   }
 }
