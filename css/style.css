@@ -1,0 +1,110 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+* {
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background: #fff;
+  width: 980px;
+  margin: 0 auto;
+}
+header {
+  position: relative;
+  height: 175px;
+}
+header .logo {
+  position: absolute;
+  left: 50%;
+  top: 25px;
+  margin-left: -107px;
+}
+header .top_nav {
+  font-size: 0;
+  position: absolute;
+  top: 111px;
+  left: 25px;
+}
+header .top_nav > ul > li {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin-left: 50px;
+}
+header .top_nav > ul > li:first-child {
+  margin-left: 0;
+}
+header .top_nav > ul > li:nth-child(2) {
+  margin-right: 255px;
+}
+header .top_nav > ul > li:hover > a {
+  color: #fff;
+  background: url("../images/top_nav_back.png");
+}
+header .top_nav > ul > li:hover > ul {
+  display: block;
+}
+header .top_nav > ul > li > a {
+  font: 27px/27px 'pf_din_text_comp_prolight';
+  text-align: center;
+  color: #5d305c;
+  text-decoration: none;
+  display: block;
+  height: 64px;
+  padding: 15px 35px;
+  -webkit-border-top-right-radius: 20px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 20px;
+  -moz-border-radius-topright: 20px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 20px;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+header .top_nav > ul > li > ul {
+  display: none;
+  background: url("../images/top_nav_back.png");
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 0;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 25px 0 35px;
+  width: 100%;
+  position: absolute;
+  font-size: 10px;
+}
+header .top_nav > ul > li > ul > li:hover > a {
+  background: #c48bc0;
+}
+header .top_nav > ul > li > ul > li > a {
+  text-align: center;
+  display: block;
+  font: 20px/35px 'pf_din_text_comp_prolight';
+  color: #fff;
+  text-decoration: none;
+  padding: 0 3px;
+}

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'pf_din_text_comp_prolight';
+    src: url('fonts/pfdintextcomppro-light.eot');
+    src: url('fonts/pfdintextcomppro-light.eot?#iefix') format('embedded-opentype'),
+    url('fonts/pfdintextcomppro-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
