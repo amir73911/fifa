@@ -22,16 +22,13 @@ $(function(){
         controlNavigation: 'thumbnails',
         thumbs: {
             orientation: 'vertical',
-            paddingBottom: 4,
-            appendSpan: true
         },
         transitionType:'fade',
-        autoScaleSlider: true,
-        autoScaleSliderWidth: 960,
-        autoScaleSliderHeight: 600,
         loop: true,
         arrowsNav: false,
-        keyboardNavEnabled: true
+        keyboardNavEnabled: true,
+        imageAlignCenter: false,
+        imageScaleMode: 'none'
 
     });
 
@@ -43,6 +40,29 @@ $(function(){
     // опшены в слайдере2
     $('.slider2_back .options a').click(function(){
         $(this).toggleClass('selected');
+        return false;
+    });
+
+    $(".carousel").carousel({
+        layout: {
+            horizontal: true, // set to false for vertical slider
+            fixedHeight: true, // set height based on highest slide
+            visibleSlides: 5, // how many slides to fit within visible area (0: calculate based on initial width)
+            gutter: 14 // spacing between slides
+        },
+        elements: { // which navigational elements to show
+            prevNext: true, // buttons for previous / next slide
+            handles: false, // button for each slide showing its index
+            counter: false // "Slide x of y"
+        }
+    });
+
+
+    $('.carousel-slide, .portfolio .item').BlackAndWhite({
+        speed: { //this property could also be just speed: value for both fadeIn and fadeOut
+            fadeIn: 100, // 200ms for fadeIn animations
+            fadeOut: 300 // 800ms for fadeOut animations
+        }
     });
 
 });

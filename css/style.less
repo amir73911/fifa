@@ -25,6 +25,10 @@ h1 {
   color: #5d305c;
   text-align: center;
 }
+h2 {
+  font: 22px/18px pf_din_text_comp_prolight;
+  color: #5d305c;
+}
 
 header {
   position: relative;
@@ -36,6 +40,7 @@ header {
     left: 50%;
     top: 25px;
     margin-left: -107px;
+    z-index: 10;
   }
   .top_nav {
     font-size: 0;
@@ -165,44 +170,90 @@ header {
   background: #fffbec;
   .rounded(20px);
   padding: 15px 15px 15px 25px;
+  height: 570px;
   &>* {
     display: inline-block;
     vertical-align: top;
   }
   .options {
     margin-right: 20px;
-    a {
-      color: #afafaf;
-      font: 19px 'pf_din_text_comp_prolight';
-      display: block;
-      position: relative;
-      &:hover {
-        color: #6a3767;
-      }
-      &.selected {
-        color: #6a3767;
-        &:before {
-          content: "";
-          position: absolute;
-          left: -17px;
-          top: 8px;
-          width: 10px;
-          height: 10px;
-          background: #864580;
-          .rounded(10px);
+    width: 130px;
+    height: 515px;
+    position: relative;
+    ul {
+      a {
+        color: #afafaf;
+        font: 19px 'pf_din_text_comp_prolight';
+        display: block;
+        position: relative;
+        &:hover {
+          color: #6a3767;
         }
+        &.selected {
+          color: #6a3767;
+          &:before {
+            content: "";
+            position: absolute;
+            left: -17px;
+            top: 8px;
+            width: 10px;
+            height: 10px;
+            background: #864580;
+            .rounded(10px);
+          }
+        }
+      }
+    }
+    .copyrights {
+      position: absolute;
+      bottom: 5px;
+      color: #969596;
+      font-size: 14px;
+      line-height: 18px;
+      a {
+        color: #864580;
       }
     }
   }
   .slider-vert {
-    width: 560px;
+    width: 570px;
+    .rsSlide  {
+      width: 378px;
+      height: 512px;
+      img {
+        .rounded(20px);
+      }
+    }
+    .rsNav {
+      margin: -9px 0 0 0;
+
+      height: 525px;
+    }
     .rsNavItem {
       display: block;
       float: none;
+      margin-bottom: 9px !important;
+      img {
+        .rounded(12px);
+      }
+    }
+  }
+  .bottom {
+    display: block;
+    a {
+      color: #969596;
+      font-size: 19px;
+    }
+    &>* {
+      display: inline-block;
+      vertical-align: top;
+    }
+    .share42init {
+      margin: 0 160px 0 286px;
+      padding: 3px 0 0;
     }
   }
 }
-
 
 .content {
   .content_block_prev {
@@ -236,9 +287,110 @@ header {
       margin-bottom: 10px;
     }
   }
+  .recommend {
+    h2 {
+      margin-bottom: 40px;
+    }
+    .item {
+      margin-bottom: 20px;
+      .head {
+        background: #e3d7e2;
+        font-size: 18px;
+        line-height: 24px;
+        color: #5d305c;
+        padding-left: 12px;
+        .rounded(10px);
+        width: 135px;
+        margin-bottom: 3px;
+      }
+      .text {
+        color: #000;
+        font: 11px/14px 'tahoma';
+        margin-bottom: 10px;
+      }
+      .image {
+        img {
+          width: 100%;
+          height: auto;
+          .rounded(5px);
+        }
+      }
+      .link {
+        display: block;
+        color: #000;
+        font: 11px/14px 'tahoma';
+        text-align: right;
+      }
+    }
+  }
 }
+
+.all_elements {
+  height: 208px;
+  padding: 20px 0;
+  border: 2px dashed #c9a1cb;
+  border-left: 0;
+  border-right: 0;
+  position: relative;
+  margin: 35px 0 65px;
+  .head {
+    color: #864580;
+    font-size: 19px;
+    position: absolute;
+    background: #fff;
+    padding: 0 45px 0 10px;
+    top: -10px;
+  }
+  .carousel {
+    margin-left: 2px;
+    position: relative;
+    .carousel-slide {
+      width: 180px !important;
+    }
+    .carousel-nav {
+      position: absolute;
+      top: 64px;
+      right: -47px;
+      width: 36px;
+      height: 36px;
+      background: url("../images/preview_link.png") no-repeat;
+      font-size: 0;
+    }
+    .carousel-nav:first-child {
+      right: auto;
+      left: -47px;
+      .rotation(180deg);
+    }
+    img {
+      .rounded(12px);
+    }
+  }
+  .link {
+    color: #864580;
+    font-size: 19px;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    margin-left: -50px;
+    text-transform: uppercase;
+  }
+}
+
+.portfolio {
+  font-size: 0;
+  margin-left: -20px;
+  .item {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 18px 16px;
+  }
+}
+
 
 .share42init {
   text-align: right;
   padding: 15px;
+  a {
+    .rounded(16px);
+  }
 }
