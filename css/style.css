@@ -13,6 +13,15 @@
 .clear {
   clear: both;
 }
+.italic {
+  font-style: italic;
+}
+.text-right {
+  text-align: right;
+}
+p {
+  margin-bottom: 1em;
+}
 body {
   background: #fff;
   width: 980px;
@@ -451,6 +460,26 @@ header .top_nav > ul > li > ul > li > a {
 .actions .item .inner .link {
   font-size: 18px;
   color: #693666;
+}
+.production .item {
+  position: relative;
+  margin-bottom: 40px;
+}
+.production .item:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -285px;
+  bottom: -20px;
+  width: 570px;
+  border-bottom: 2px dashed #C9A1CB;
+}
+.production .item .head_image {
+  margin-bottom: 10px;
+}
+.production .item .text {
+  font: 12px 'tahoma';
+  color: #000;
 }
 .share42init {
   text-align: right;
