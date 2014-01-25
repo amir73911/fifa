@@ -21,7 +21,7 @@ $(function(){
     $('#slider2').royalSlider({
         controlNavigation: 'thumbnails',
         thumbs: {
-            orientation: 'vertical',
+            orientation: 'vertical'
         },
         transitionType:'fade',
         loop: true,

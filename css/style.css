@@ -412,6 +412,46 @@ header .top_nav > ul > li > ul > li > a {
   vertical-align: top;
   margin: 0 0 18px 16px;
 }
+.actions .item {
+  padding-top: 20px;
+}
+.actions .item > * {
+  display: inline-block;
+  vertical-align: top;
+}
+.actions .item .image {
+  width: 180px;
+  max-width: 100%;
+  text-align: center;
+}
+.actions .item .inner {
+  text-align: center;
+  width: 550px;
+  margin: 0 20px;
+  padding-bottom: 35px;
+  border-bottom: 2px dashed #c9a1cb;
+}
+.actions .item .inner .head {
+  color: #693666;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+.actions .item .inner .info {
+  color: #000;
+  font: italic 12px 'tahoma';
+  margin-bottom: 25px;
+}
+.actions .item .inner .text {
+  font: 12px 'tahoma';
+  color: #000;
+  margin-bottom: 7px;
+}
+.actions .item .inner .link {
+  font-size: 18px;
+  color: #693666;
+}
 .share42init {
   text-align: right;
   padding: 15px;
