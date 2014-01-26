@@ -481,6 +481,69 @@ header .top_nav > ul > li > ul > li > a {
   font: 12px 'tahoma';
   color: #000;
 }
+.contacts .head {
+  font-size: 28px;
+  color: #5d305c;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.contacts .item {
+  margin: 15px 0 20px;
+  position: relative;
+  font-size: 19px;
+  color: #5d305c;
+  padding-top: 6px;
+}
+.contacts .item:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -285px;
+  bottom: -13px;
+  width: 570px;
+  border-bottom: 2px dashed #C9A1CB;
+}
+.contacts .item:last-child:before {
+  border: 0;
+}
+.contacts .item img {
+  max-width: 100%;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.contacts .item .col-xs-1 {
+  text-decoration: underline;
+}
+.contacts .saloon_address {
+  background: #fffbec;
+  position: relative;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding: 3px 0 15px;
+}
+.contacts .saloon_address .phones {
+  text-align: right;
+  position: absolute;
+  top: 44px;
+  left: 154px;
+  text-decoration: underline;
+}
+.contacts .saloon_address .phones .phone {
+  font-size: 31px;
+  text-decoration: none !important;
+  position: relative;
+}
+.contacts .saloon_address .phones .phone:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -7px;
+  background: url("../images/phone.png");
+  width: 38px;
+  height: 38px;
+}
 .share42init {
   text-align: right;
   padding: 15px;
