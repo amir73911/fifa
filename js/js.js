@@ -43,7 +43,7 @@ $(function(){
         return false;
     });
 
-    $(".carousel").carousel({
+    if ($(".carousel").length) $(".carousel").carousel({
         layout: {
             horizontal: true, // set to false for vertical slider
             fixedHeight: true, // set height based on highest slide
@@ -57,12 +57,30 @@ $(function(){
         }
     });
 
-
-    $('.carousel-slide, .portfolio .item').BlackAndWhite({
+    if ($(".carousel-slide").length) $('.carousel-slide').BlackAndWhite({
         speed: { //this property could also be just speed: value for both fadeIn and fadeOut
             fadeIn: 100, // 200ms for fadeIn animations
             fadeOut: 300 // 800ms for fadeOut animations
         }
     });
 
+    if ($(".portfolio .item").length) $('.portfolio .item').BlackAndWhite({
+        speed: { //this property could also be just speed: value for both fadeIn and fadeOut
+            fadeIn: 100, // 200ms for fadeIn animations
+            fadeOut: 300 // 800ms for fadeOut animations
+        }
+    });
+
+    $('.blog .yellow_back').height(blog_back_height('.blog .left-col', '.blog .center-col'));
+
+    $.datepick.setDefaults($.datepick.regional['ru']);
+    $('.calendar').datepick($.extend(
+        {changeMonth: false, showOtherMonths: true}, $.datepick.regional['ru']));
+
 });
+
+function blog_back_height(el1, el2) {
+    var max = $(el1).height();
+    max = $(el2).height() > max ? $(el2).height() : max;
+    return max;
+}
