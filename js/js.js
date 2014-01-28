@@ -61,6 +61,11 @@ $(function(){
         }
     });
 
+    $('.all_elements').on('click', '.link',function(e){
+        $('.portfolio').slideToggle();
+        e.preventDefault();
+    });
+
     if ($(".carousel-slide").length) $('.carousel-slide').BlackAndWhite({
         speed: { //this property could also be just speed: value for both fadeIn and fadeOut
             fadeIn: 100, // 200ms for fadeIn animations
@@ -74,6 +79,8 @@ $(function(){
             fadeOut: 300 // 800ms for fadeOut animations
         }
     });
+    $('.portfolio').hide();
+
 
     $('.blog .yellow_back').height(blog_back_height('.blog .left-col', '.blog .center-col'));
 
