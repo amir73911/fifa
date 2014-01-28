@@ -7,15 +7,19 @@ $(function(){
         controlNavigation: 'bullets',
         imageScaleMode: 'fill',
         imageAlignCenter: true,
-        loop: false,
-        loopRewind: false,
+        loop:true,
+        loopRewind:true,
         numImagesToPreload: 6,
         keyboardNavEnabled: true,
         autoScaleSlider: true,
         autoScaleSliderWidth: 980,
         autoScaleSliderHeight: 422,
         imgWidth: 980,
-        imgHeight: 422
+        imgHeight: 422,
+        autoPlay: {
+            enabled: true,
+            pauseOnHover: true
+        }
     });
 
     $('#slider2').royalSlider({
