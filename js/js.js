@@ -81,6 +81,9 @@ $(function(){
     });
     $('.portfolio').hide();
 
+    $('.ico').each(function(){
+        $(this).append('<i></i>');
+    });
 
     $('.blog .yellow_back').height(blog_back_height('.blog .left-col', '.blog .center-col'));
 

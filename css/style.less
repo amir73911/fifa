@@ -663,6 +663,199 @@ header {
   }
 }
 
+.price_list {
+  width: 100%;
+  margin-top: 2px;
+  td {
+    vertical-align: middle;
+    text-align: center;
+    width: 20%;
+  }
+  .text {
+    font-size: 18px;
+    color: #5d305c;
+    text-decoration: underline;
+    margin-top: 8px;
+  }
+  tr.table_head {
+    td {
+      background: #edd7e7;
+      font-size: 29px;
+      color: #5d305c;
+      &:first-child {
+        .border-radius(0, 0, 50px, 50px);
+      }
+      &:last-child {
+        .border-radius(50px, 50px, 0, 0);
+      }
+    }
+  }
+  tr.basic_tr {
+    td {
+      font-size: 26px;
+      color: #5d305c;
+      border-right: 2px dashed #fff;
+      border-bottom: 4px solid #fff;
+      background: #faf3f8;
+      height: 50px;
+    }
+    td:first-child {
+      border: 0;
+      background: none;
+      padding-right: 10px;
+      .text {
+        font-size: 18px;
+        color: #5d305c;
+        text-decoration: underline;
+        display: block;
+        margin-bottom: 8px;
+        margin-top: 0;
+      }
+    }
+    td.first{
+      background: #faf3f8;
+      .border-radius(0, 0, 25px, 25px);
+      border-right: 2px dashed #fff;
+      border-bottom: 4px solid #fff;
+    }
+    td.last {
+      border: 0;
+      border-bottom: 4px solid #fff;
+      .border-radius(25px, 25px, 0, 0);
+    }
+    td.last ~ td {
+      background: 0;
+    }
+    td.i-blocks-inside {
+      &>* {
+        display: inline-block !important;
+        vertical-align: middle !important;
+        margin-bottom: 0 !important;
+      }
+      .text {
+        max-width: 125px;
+      }
+    }
+    td.pull-right {
+      text-align: right;
+    }
+  }
+  tr.hr {
+    &.type1 {
+      div {
+        height: 35px;
+        width: 290px;
+        margin:  0 auto;
+        background: url("../images/header_back.png") left center no-repeat;
+      }
+    }
+    &.type2 {
+      div {
+        height: 50px;
+        width: 100%;
+        background: url("../images/hr2.png") center left repeat-x;
+      }
+    }
+  }
+  .ico {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    .rounded(24px);
+    text-align: center;
+    background: #521d56;
+    &:before {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+    &.ico-big {
+      width: 96px;
+      height: 96px;
+      .rounded(48px);
+    }
+    &.ico-yellow {
+      background: #ffc390;
+      margin-right: 15px;
+    }
+  }
+  .small_capt {
+    font-size: 18px;
+    line-height: 24px;
+    color: #5d305c;
+    background: #e3d7e2;
+    .rounded(12px);
+    padding: 0 20px;
+    margin: 10px 0;
+    display: inline-block;
+  }
+
+}
+
+// sprite
+
+.ico-48 i, .ico-38 i, .ico-39 i, .ico-35 i, .ico-36 i,
+.ico-3 i, .ico-40 i, .ico-2 i, .ico-1 i, .ico-34 i,
+.ico-41 i, .ico-49 i, .ico-30 i, .ico-42 i, .ico-32 i,
+.ico-31 i, .ico-50 i, .ico-11 i, .ico-12 i, .ico-13 i,
+.ico-45 i, .ico-29 i, .ico-46 i, .ico-47 i, .ico-43 i,
+.ico-44 i, .ico-23 i, .ico-19 i, .ico-28 i, .ico-27 i,
+.ico-14 i, .ico-7 i, .ico-6 i, .ico-33 i, .ico-5 i,
+.ico-22 i, .ico-17 i, .ico-25 i, .ico-24 i, .ico-15 i,
+.ico-18 i, .ico-26 i, .ico-16 i, .ico-21 i, .ico-20 i {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 100%;
+  background: url('../images/price_icons.png') no-repeat;
+}
+
+.ico-48 i { background-position: -1px -0px; width: 116px; height: 117px; }
+.ico-38 i { background-position: -1px -118px; width: 114px; height: 115px; }
+.ico-39 i { background-position: -1px -234px; width: 88px; height: 87px; }
+.ico-35 i { background-position: -1px -322px; width: 61px; height: 86px; }
+.ico-36 i { background-position: -1px -409px; width: 62px; height: 86px; }
+.ico-3 i { background-position: -1px -496px; width: 62px; height: 86px; }
+.ico-40 i { background-position: -1px -583px; width: 70px; height: 79px; }
+.ico-2 i { background-position: -1px -663px; width: 61px; height: 76px; }
+.ico-1 i { background-position: -63px -322px; width: 45px; height: 74px; }
+.ico-34 i { background-position: -64px -409px; width: 45px; height: 74px; }
+.ico-41 i { background-position: -1px -740px; width: 97px; height: 72px; }
+.ico-49 i { background-position: -1px -813px; width: 71px; height: 71px; }
+.ico-30 i { background-position: -1px -885px; width: 59px; height: 66px; }
+.ico-42 i { background-position: -1px -952px; width: 99px; height: 59px; }
+.ico-32 i { background-position: -61px -885px; width: 54px; height: 55px; }
+.ico-31 i { background-position: -1px -1012px; width: 66px; height: 52px; }
+.ico-50 i { background-position: -63px -663px; width: 53px; height: 52px; }
+.ico-11 i { background-position: -64px -484px; width: 50px; height: 50px; }
+.ico-12 i { background-position: -68px -1012px; width: 48px; height: 48px; }
+.ico-13 i { background-position: -68px -1061px; width: 47px; height: 48px; }
+.ico-45 i { background-position: -64px -535px; width: 47px; height: 47px; }
+.ico-29 i { background-position: -1px -1110px; width: 69px; height: 47px; }
+.ico-46 i { background-position: -1px -1158px; width: 47px; height: 47px; }
+.ico-47 i { background-position: -49px -1158px; width: 48px; height: 47px; }
+.ico-43 i { background-position: -1px -1206px; width: 47px; height: 47px; }
+.ico-44 i { background-position: -49px -1206px; width: 47px; height: 47px; }
+.ico-23 i { background-position: -72px -583px; width: 35px; height: 46px; }
+.ico-19 i { background-position: -73px -813px; width: 33px; height: 45px; }
+.ico-28 i { background-position: -71px -1110px; width: 38px; height: 45px; }
+.ico-27 i { background-position: -1px -1254px; width: 33px; height: 45px; }
+.ico-14 i { background-position: -35px -1254px; width: 33px; height: 45px; }
+.ico-7 i { background-position: -1px -1065px; width: 33px; height: 37px; }
+.ico-6 i { background-position: -90px -234px; width: 24px; height: 36px; }
+.ico-33 i { background-position: -69px -1254px; width: 34px; height: 35px; }
+.ico-5 i { background-position: -72px -630px; width: 41px; height: 30px; }
+.ico-22 i { background-position: -69px -1290px; width: 36px; height: 28px; }
+.ico-17 i { background-position: -63px -716px; width: 38px; height: 19px; }
+.ico-25 i { background-position: -73px -859px; width: 38px; height: 19px; }
+.ico-24 i { background-position: -1px -1300px; width: 36px; height: 19px; }
+.ico-15 i { background-position: -38px -1319px; width: 36px; height: 19px; }
+.ico-18 i { background-position: -1px -1339px; width: 49px; height: 19px; }
+.ico-26 i { background-position: -75px -1319px; width: 38px; height: 19px; }
+.ico-16 i { background-position: -51px -1339px; width: 38px; height: 19px; }
+.ico-21 i { background-position: -1px -1320px; width: 36px; height: 18px; }
+.ico-20 i { background-position: -63px -397px; width: 36px; height: 8px; }
 
 .share42init {
   text-align: right;
