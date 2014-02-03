@@ -13,6 +13,15 @@
 .clear {
   clear: both;
 }
+.pull-left {
+  text-align: left;
+}
+.pull-right {
+  text-align: right;
+}
+.pull-center {
+  text-align: center;
+}
 .italic {
   font-style: italic;
 }
@@ -374,6 +383,55 @@ header .top_nav > ul > li > ul > li > a {
   color: #000;
   font: 11px/14px 'tahoma';
   text-align: right;
+}
+.services .text {
+  color: #000;
+  font: 11px 'Tahoma';
+}
+.services .item {
+  text-align: center;
+  padding: 10px 0 ;
+}
+.services .item .head {
+  background: #e3d7e2;
+  font-size: 18px;
+  line-height: 24px;
+  color: #5d305c;
+  padding-left: 12px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  width: 150px;
+  margin: 0 auto 10px;
+}
+.services .item .image {
+  margin-bottom: 10px;
+}
+.services .item .text {
+  text-align: left;
+  margin-bottom: 4px;
+}
+.services .item .gal_link {
+  font-size: 19px;
+  color: #5d305c;
+  display: block;
+}
+.services .item .price_link {
+  display: block;
+  color: #969596;
+  font-size: 19px;
+}
+.services .bordered {
+  border-bottom: 2px dashed #5d305c;
+}
+.services .bottom .share42init {
+  text-align: center;
+}
+.services .bottom .share42init > span {
+  display: block;
+  border-top: 2px dashed #5d305c;
+  padding-top: 10px;
+  margin: 0 200px;
 }
 .all_elements {
   height: 208px;
@@ -863,9 +921,6 @@ header .top_nav > ul > li > ul > li > a {
 }
 .price_list tr.basic_tr td.i-blocks-inside .text {
   max-width: 125px;
-}
-.price_list .pull-right {
-  text-align: right;
 }
 .price_list tr.hr.type1 div {
   height: 35px;
