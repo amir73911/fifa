@@ -396,6 +396,9 @@ header .top_nav > ul > li > ul > li > a {
   margin-left: 2px;
   position: relative;
 }
+.all_elements .carousel .carousel-frame {
+  height: 166px !important;
+}
 .all_elements .carousel .carousel-slide {
   width: 180px !important;
 }
